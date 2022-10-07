@@ -27,7 +27,7 @@ export function Participant() {
             </header>
             <div className="flex flex-row gap-2">
                 <button 
-                    className="flex items-center justify-center w-full p-4 rounded-lg disabled:opacity-40 bg-zinc-200 dark:bg-zinc-700" 
+                    className="flex items-center justify-center w-full p-4 rounded-lg disabled:opacity-40 bg-red-400 dark:bg-red-700" 
                     onClick={decrease}
                     disabled={count === 0}
                 >

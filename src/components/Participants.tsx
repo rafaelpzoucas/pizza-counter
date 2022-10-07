@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Participant } from "./Participant"
 
+import { Plus } from 'phosphor-react'
+
 
 export function Participants() {
     const [participants, setParticipants] = useState([0])
@@ -22,10 +24,11 @@ export function Participants() {
             </main>
 
             <button
-                className="flex items-center justify-center w-full rounded-lg p-4 font-bold text-zinc-100 bg-rose-700"
+                className="flex items-center justify-center gap-2 w-full rounded-lg p-4 font-bold border text-zinc-600 dark:text-zinc-100"
                 onClick={handleCreateNewParticipant}
             >
-                Adidionar participante
+                <Plus />
+                Adicionar participante
             </button>
         </div>
     )
