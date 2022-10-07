@@ -5,6 +5,12 @@ import { Plus, Minus } from 'phosphor-react'
 export function Participant() {
     const [count, setCount] = useState(0)
 
+    function reset() {
+        if(count > 0) {
+            setCount(0)
+        }
+    }
+
     function decrease() {
         if(count > 0) {
             setCount(count - 1)
@@ -26,6 +32,13 @@ export function Participant() {
                 <strong>{count} fatias</strong>
             </header>
             <div className="flex flex-row gap-2">
+                <button 
+                    className="flex items-center justify-center w-full p-4 rounded-lg border-2 disabled:opacity-40" 
+                    onClick={reset}
+                    disabled={count === 0}
+                >
+                    Zerar
+                </button>
                 <button 
                     className="flex items-center justify-center w-full p-4 rounded-lg disabled:opacity-40 bg-red-400 dark:bg-red-700" 
                     onClick={decrease}
