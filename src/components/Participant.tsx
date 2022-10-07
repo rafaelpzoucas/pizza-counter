@@ -21,7 +21,7 @@ export function Participant() {
                 <input 
                     type="text" 
                     placeholder="Digite um nome..."
-                    className="bg-transparent focus:outline-none"
+                    className="bg-transparent text-lg focus:shadow-none"
                 />
                 <strong>{count} fatias</strong>
             </header>
