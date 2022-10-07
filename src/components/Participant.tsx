@@ -23,12 +23,13 @@ export function Participant() {
                     placeholder="Digite um nome..."
                     className="bg-transparent"
                 />
-                <strong>{count} pizzas</strong>
+                <strong>{count} fatias</strong>
             </header>
             <div className="flex flex-row gap-2">
                 <button 
-                    className="flex items-center justify-center w-full p-4 rounded-lg bg-zinc-200 dark:bg-zinc-700" 
+                    className="flex items-center justify-center w-full p-4 rounded-lg disabled:opacity-60 bg-zinc-200 dark:bg-zinc-700" 
                     onClick={decrease}
+                    disabled={count === 0}
                 >
                     <Minus size={24} />
                 </button>

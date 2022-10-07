@@ -15,7 +15,7 @@ export function Participants() {
                 {
                     participants.map(() => {
                         return (
-                                <Participant />
+                            <Participant />
                         )
                     })
                 }
