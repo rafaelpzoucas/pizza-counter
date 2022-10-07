@@ -16,7 +16,7 @@ export function Participant() {
     }
 
     return (
-        <div className="flex flex-col gap-4 p-4 rounded-lg w-full border bg-zinc-100">
+        <div className="flex flex-col gap-4 p-4 rounded-lg w-full border dark:border-none bg-zinc-100 dark:bg-zinc-800">
             <header className="flex flex-row  justify-between w-full">
                 <input 
                     type="text" 
@@ -27,16 +27,16 @@ export function Participant() {
             </header>
             <div className="flex flex-row gap-2">
                 <button 
-                    className="flex items-center justify-center w-full p-4 rounded-lg bg-zinc-200" 
+                    className="flex items-center justify-center w-full p-4 rounded-lg bg-zinc-200 dark:bg-zinc-700" 
                     onClick={decrease}
                 >
-                    <Minus size={24} color="#155e75" weight="bold" />
+                    <Minus size={24} />
                 </button>
                 <button 
-                    className="flex items-center justify-center w-full p-4 rounded-lg bg-zinc-200" 
+                    className="flex items-center justify-center w-full p-4 rounded-lg bg-zinc-200 dark:bg-zinc-700" 
                     onClick={increase}
                 >
-                    <Plus size={24} color="#155e75" weight="bold" />
+                    <Plus size={24} />
                 </button>
             </div>
         </div>
