@@ -3,7 +3,7 @@ import { Participant } from "./Participant"
 
 
 export function Participants() {
-    const [participants, setParticipants] = useState([1, 2, 3])
+    const [participants, setParticipants] = useState([0])
 
     function handleCreateNewParticipant() {
         setParticipants([...participants, participants.length + 1])
@@ -12,7 +12,7 @@ export function Participants() {
     return (
         <div className="flex flex-col gap-2 p-4">
             {
-                participants.map(participant => {
+                participants.map(() => {
                     return (
                         <Participant />
                     )
