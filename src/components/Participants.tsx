@@ -28,7 +28,7 @@ export function Participants() {
                 onClick={handleCreateNewParticipant}
             >
                 <Plus />
-                Adicionar participante
+                Add eater
             </button>
         </div>
     )

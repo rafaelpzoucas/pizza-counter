@@ -26,10 +26,10 @@ export function Participant() {
             <header className="flex flex-row  justify-between w-full">
                 <input 
                     type="text" 
-                    placeholder="Digite um nome..."
+                    placeholder="Type a name..."
                     className="bg-transparent text-lg focus:shadow-none"
                 />
-                <strong>{count} fatias</strong>
+                <strong>{count} slices</strong>
             </header>
             <div className="flex flex-row gap-2">
                 <button 
@@ -37,7 +37,7 @@ export function Participant() {
                     onClick={reset}
                     disabled={count === 0}
                 >
-                    Zerar
+                    reset
                 </button>
                 <button 
                     className="flex items-center justify-center w-full p-4 rounded-lg disabled:opacity-40 bg-red-400 dark:bg-red-700" 
